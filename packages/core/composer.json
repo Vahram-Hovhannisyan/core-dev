@@ -1,0 +1,14 @@
+{
+    "name": "ourcore/core",
+    "description": "E-commerce core",
+    "type": "library",
+    "require": { "php": "^8.3" },
+    "autoload": {
+        "psr-4": { "OurCore\\Core\\": "src/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["OurCore\\Core\\CoreServiceProvider"]
+        }
+    }
+}
