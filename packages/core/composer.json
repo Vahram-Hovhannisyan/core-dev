@@ -2,7 +2,11 @@
     "name": "ourcore/core",
     "description": "E-commerce core",
     "type": "library",
-    "require": { "php": "^8.3" },
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^13.0",
+        "spatie/laravel-translatable": "^6.0"
+    },
     "autoload": {
         "psr-4": { "OurCore\\Core\\": "src/" }
     },

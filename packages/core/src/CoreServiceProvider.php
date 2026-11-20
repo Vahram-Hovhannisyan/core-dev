@@ -23,5 +23,6 @@ class CoreServiceProvider extends ServiceProvider
         ], 'core-config');
 
         $this->app->make(PluginManager::class)->bootAll();
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 }
