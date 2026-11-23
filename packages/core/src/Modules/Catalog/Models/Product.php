@@ -44,4 +44,9 @@ class Product extends Model
     {
         return $this->hasMany(ProductVariant::class)->orderBy('position');
     }
+
+    public function productUnits(): HasMany
+    {
+        return $this->hasMany(ProductUnit::class);
+    }
 }

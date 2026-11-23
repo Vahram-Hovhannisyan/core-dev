@@ -2559,9 +2559,10 @@
             "dist": {
                 "type": "path",
                 "url": "packages/core",
-                "reference": "9a7a54579aa30fda68796545751046df02ec4ff7"
+                "reference": "37ba9f1ca8b118b27c78ea8f880f69616145223f"
             },
             "require": {
+                "brick/math": "^1.0",
                 "illuminate/support": "^13.0",
                 "php": "^8.3",
                 "spatie/laravel-translatable": "^6.0"
