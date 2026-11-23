@@ -3,6 +3,7 @@
 namespace OurCore\Core;
 
 use Illuminate\Support\ServiceProvider;
+use OurCore\Core\Modules\Identity\Console\SyncAccessCommand;
 use OurCore\Core\Plugins\PluginManager;
 
 class CoreServiceProvider extends ServiceProvider
@@ -24,5 +25,8 @@ class CoreServiceProvider extends ServiceProvider
 
         $this->app->make(PluginManager::class)->bootAll();
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        if ($this->app->runningInConsole()) {
+            $this->commands([SyncAccessCommand::class]);
+        }
     }
 }
