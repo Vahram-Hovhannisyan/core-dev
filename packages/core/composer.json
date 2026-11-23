@@ -6,7 +6,8 @@
         "php": "^8.3",
         "illuminate/support": "^13.0",
         "spatie/laravel-translatable": "^6.0",
-        "brick/math": "^1.0"
+        "brick/math": "^1.0",
+        "spatie/laravel-medialibrary": "^11.23.13"
     },
     "autoload": {
         "psr-4": { "OurCore\\Core\\": "src/" }
